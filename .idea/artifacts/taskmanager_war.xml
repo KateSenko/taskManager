@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="taskmanager:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="taskmanager.war">
+      <element id="artifact" artifact-name="taskmanager:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
