@@ -21,7 +21,7 @@ import entity.Tasks;
 public class AppConfig {
 
     @Bean
-    public TaskDao personDao() {
+    public TaskDao taskDao() {
         return new TaskDaoImpl();
     }
     @Bean

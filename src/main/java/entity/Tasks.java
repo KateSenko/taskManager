@@ -3,16 +3,14 @@ package entity;
 /**
  * Created by Kate on 15.11.2015.
  */
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="tasks")
+@Table(name="task")
 public class Tasks {
     @Id
     @Column(name="id")
+    @GeneratedValue
     private Long id;
 
     @Column(name="name")
