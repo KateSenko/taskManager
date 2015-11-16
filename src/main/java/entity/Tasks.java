@@ -6,7 +6,7 @@ package entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="task")
+@Table(name="tasks")
 public class Tasks {
     @Id
     @Column(name="id")

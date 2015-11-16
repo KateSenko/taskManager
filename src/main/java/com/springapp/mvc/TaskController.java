@@ -11,9 +11,6 @@ import repository.TaskRepository;
 
 import java.util.List;
 
-/**
- * Created by Kate on 16.11.2015.
- */
 @Controller
 public class TaskController {
 
