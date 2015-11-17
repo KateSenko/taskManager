@@ -6,7 +6,7 @@
 <body>
 <div>
     <h1>Task manager</h1>
-    <c:if test = "${!empty tasks}">
+    <c:if test = "${!empty task}">
         <table class ="task-list-table">
             <tr>
                 <th>Name</th>
@@ -16,10 +16,10 @@
                 </sec:authorize>
 
             </tr>
-            <c:forEach items = "${tasks}" var = "tasks">
+            <c:forEach items = "${task}" var = "tasks">
                 <tr>
-                    <td>${tasks.name}</td>
-                    <td>${tasks.priority}</td>
+                    <td>${task.name}</td>
+                    <td>${task.priority}</td>
                 </tr>
             </c:forEach>
         </table>

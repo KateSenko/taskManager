@@ -24,8 +24,10 @@ public class TaskController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getTask(Model model){
         List<Tasks> tasks = this.taskRepository.listAll();
-        model.addAttribute("tasks", tasks);
+        model.addAttribute("task", tasks);
         return "index";
     }
+
+
 
 }
