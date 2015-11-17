@@ -18,6 +18,9 @@ public class TaskRepository {
     @Autowired
     private SessionFactory sessionFactory;
 
+    public TaskRepository() {
+    }
+
     public void addTask(Tasks tasks){
         this.sessionFactory.getCurrentSession().save(tasks);
     }
